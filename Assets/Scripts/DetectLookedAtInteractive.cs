@@ -27,7 +27,12 @@ public class DetectLookedAtInteractive : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        
-        Physics.Raycast(raycastOrigin.position, raycastOrigin.forward, maxRange);
+        RaycastHit hitInfo;
+        Debug.DrawRay(raycastOrigin.position, raycastOrigin.forward * maxRange, Color.red);
+        bool objectWasDetected = Physics.Raycast(raycastOrigin.position, raycastOrigin.forward, out hitInfo, maxRange);
+        if (objectWasDetected == true)
+        {
+            Debug.Log("Player is looking at: " + hitInfo.collider.gameObject.name);
+        }
     }
 }
