@@ -20,7 +20,7 @@ public class DetectLookedAtInteractive : MonoBehaviour
     public IInteractive LookedAtInteractive
     {
         get { return lookedAtInteractive; }
-        set { lookedAtInteractive = value; }
+        private set { lookedAtInteractive = value; }
 
     }
     // Update is called once per frame
@@ -35,7 +35,7 @@ public class DetectLookedAtInteractive : MonoBehaviour
 
         if (objectWasDetected == true)
         {
-            Debug.Log("Player is looking at: " + hitInfo.collider.gameObject.name);
+            //Debug.Log("Player is looking at: " + hitInfo.collider.gameObject.name);
             interactive = hitInfo.collider.gameObject.GetComponent<IInteractive>();
         }
         if (interactive != null)
