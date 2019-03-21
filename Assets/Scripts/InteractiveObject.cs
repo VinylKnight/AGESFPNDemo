@@ -11,7 +11,7 @@ public class InteractiveObject : MonoBehaviour, IInteractive
     public string DisplayText => displayText;
     private AudioSource audioSource;
 
-    private void Awake()
+    protected virtual void Awake()
     {
         audioSource = GetComponent<AudioSource>();
 
@@ -26,7 +26,7 @@ public class InteractiveObject : MonoBehaviour, IInteractive
         catch (System.Exception)
         {
 
-            throw new System.Exception("Interactive Object requires an audio source.");
+            throw new System.Exception("Interactive Object requires an AudioSource Component with an Audio Clip.");
         }
        
         Debug.Log($"Player interacted with: {gameObject.name}.");
