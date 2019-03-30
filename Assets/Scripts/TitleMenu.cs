@@ -9,6 +9,8 @@ public class TitleMenu : MonoBehaviour
     private string gameSceneName;
     [SerializeField]
     private GameObject creditsMenuPanel;
+    [SerializeField]
+    private GameObject titleMenuPanel;
 
     public void LoadGameScene()
     {
@@ -26,5 +28,9 @@ public class TitleMenu : MonoBehaviour
         creditsMenuPanel.SetActive(true);
 
     }
+    public void ShowTitle()
+    {
+        titleMenuPanel.SetActive(true);
 
+    }
 }
