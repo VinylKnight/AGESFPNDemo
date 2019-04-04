@@ -39,7 +39,6 @@ public class Door : InteractiveObject
     {
         base.Awake();
         animator = GetComponent<Animator>();
-
     }
     public override void InteractWith()
     {
@@ -52,16 +51,12 @@ public class Door : InteractiveObject
                 animator.SetBool(shouldOpenAnimParameter, true);
                 displayText = string.Empty;
                 isOpen = true;
-
             }
             else
             {
                 audioSource.clip = isLockedAudioClip;
             }
             base.InteractWith();
-        }
-        
-
+        }  
     }
-   
 }
