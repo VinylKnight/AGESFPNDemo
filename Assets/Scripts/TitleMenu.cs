@@ -15,22 +15,18 @@ public class TitleMenu : MonoBehaviour
     public void LoadGameScene()
     {
         SceneManager.LoadScene(gameSceneName);
-
     }
     public void ExitGame()
     {
         Debug.Log("Quit!");
         Application.Quit();
-
     }
     public void ShowCredits()
     {
         creditsMenuPanel.SetActive(true);
-
     }
     public void ShowTitle()
     {
         titleMenuPanel.SetActive(true);
-
     }
 }
