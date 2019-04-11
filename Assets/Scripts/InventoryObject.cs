@@ -2,17 +2,37 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InventoryObject : MonoBehaviour
+public class InventoryObject : InteractiveObject
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    //TODO: Add long description field
+    //TODO: Add Icon Field
 
-    // Update is called once per frame
-    void Update()
+    /// <summary>
+    /// When the player interacts with an inventory object, we need to do things:
+    /// 1. Add the inventory object to the PlayerInventory list
+    /// 2. Remove the object from the game world / scene
+    /// </summary>
+    [Tooltip("Name of the object, as it will appear in the inventory menu UI.")]
+    [SerializeField]
+    private string objectName = nameof(InventoryObject);
+
+    private new Renderer renderer;
+    private new Collider collider;
+
+    private void Start()
     {
-        
+        renderer = GetComponent<Renderer>();
+        collider = GetComponent<Collider>();
+    }
+    public InventoryObject()
+    {
+        displayText = $"Take {objectName}";
+    }
+    public override void InteractWith()
+    {
+        base.InteractWith();
+        PlayerInventory.InventoryObjects.Add(this);
+        collider.enabled = false;
+        renderer.enabled = false;
     }
 }
