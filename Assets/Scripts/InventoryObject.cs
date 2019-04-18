@@ -12,9 +12,13 @@ public class InventoryObject : InteractiveObject
     /// 1. Add the inventory object to the PlayerInventory list
     /// 2. Remove the object from the game world / scene
     /// </summary>
+
+    
     [Tooltip("Name of the object, as it will appear in the inventory menu UI.")]
     [SerializeField]
     private string objectName = nameof(InventoryObject);
+
+    public string ObjectName => objectName;
 
     private new Renderer renderer;
     private new Collider collider;
