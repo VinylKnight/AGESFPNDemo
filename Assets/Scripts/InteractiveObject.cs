@@ -15,21 +15,17 @@ public class InteractiveObject : MonoBehaviour, IInteractive
     protected virtual void Awake()
     {
         audioSource = GetComponent<AudioSource>();
-
     }
     public virtual void InteractWith()
     {
         try
         {
             audioSource.Play();
-
         }
         catch (System.Exception)
         {
-
             throw new System.Exception("Interactive Object requires an AudioSource Component with an Audio Clip.");
-        }
-       
+        } 
         Debug.Log($"Player interacted with: {gameObject.name}.");
     }
 }

@@ -9,10 +9,10 @@ public class Door : InteractiveObject
     [Tooltip("Assigning a key here will lock the door. If the player has the key in their inventory, they can open teh locked door.")]
     [SerializeField]
     private InventoryObject key;
-    
-    //[Tooltip("Click box to lock the door.")]
-    //[SerializeField]
-    private bool isLocked;
+
+    [Tooltip("If this is checked, the associated key is taken from the characters inventory")]
+    [SerializeField]
+    private bool consumesKey;
 
     [Tooltip("Click box to lock the door.")]
     [SerializeField]
@@ -26,7 +26,7 @@ public class Door : InteractiveObject
     [SerializeField]
     private AudioClip openClip;
 
-    //public override string DisplayText => isLocked ? lockedDisplayText : base.DisplayText;
+    private bool isLocked;
 
     public override string DisplayText
     {
@@ -62,7 +62,6 @@ public class Door : InteractiveObject
         animator = GetComponent<Animator>();
         InitializeIsLocked();
     }
-
     private void InitializeIsLocked()
     {
         if (key != null)
@@ -70,7 +69,6 @@ public class Door : InteractiveObject
             isLocked = true;
         }
     }
-
     public override void InteractWith()
     {
        
@@ -86,19 +84,15 @@ public class Door : InteractiveObject
                 animator.SetBool(shouldOpenAnimParameter, true);
                 displayText = string.Empty;
                 isOpen = true;
+                UnlockDoor();
             }
-            //if (!isLocked)
-            //{
-            //    audioSource.clip = openClip;
-            //    animator.SetBool(shouldOpenAnimParameter, true);
-            //    displayText = string.Empty;
-            //    isOpen = true;
-            //}
-            //else
-            //{
-            //    audioSource.clip = isLockedAudioClip;
-            //}
             base.InteractWith();
         }  
+    }
+    private void UnlockDoor()
+    {
+        isLocked = false;
+        if (key != null && consumesKey)
+            PlayerInventory.InventoryObjects.Remove(key);
     }
 }
