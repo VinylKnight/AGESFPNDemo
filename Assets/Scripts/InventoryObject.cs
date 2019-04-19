@@ -4,9 +4,6 @@ using UnityEngine;
 
 public class InventoryObject : InteractiveObject
 {
-    //TODO: Add long description field
-    //TODO: Add Icon Field
-
     /// <summary>
     /// When the player interacts with an inventory object, we need to do things:
     /// 1. Add the inventory object to the PlayerInventory list
@@ -17,7 +14,16 @@ public class InventoryObject : InteractiveObject
     [SerializeField]
     private string objectName = nameof(InventoryObject);
 
+    [Tooltip("The text that will display when the player selects this object in the inventory menu.")]
+    [SerializeField]
+    private string description;
+
+    [Tooltip("")]
+    [SerializeField]
+    private Sprite icon;
+
     public string ObjectName => objectName;
+
     private new Renderer renderer;
     private new Collider collider;
 
