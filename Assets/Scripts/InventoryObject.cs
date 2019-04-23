@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -15,10 +16,11 @@ public class InventoryObject : InteractiveObject
     private string objectName = nameof(InventoryObject);
 
     [Tooltip("The text that will display when the player selects this object in the inventory menu.")]
+    [TextArea(3, 8)]
     [SerializeField]
     private string description;
 
-    [Tooltip("")]
+    [Tooltip("Icon to display for the item in the inventory menu.")]
     [SerializeField]
     private Sprite icon;
 
