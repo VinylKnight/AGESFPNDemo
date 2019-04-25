@@ -1867,8 +1867,8 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 20, y: -17}
-  m_Pivot: {x: 1, y: 1}
+  m_SizeDelta: {x: 20, y: 0}
+  m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &178662415
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1908,8 +1908,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1669529291}
   m_HandleRect: {fileID: 1669529290}
   m_Direction: 2
-  m_Value: 0
-  m_Size: 1
+  m_Value: 1
+  m_Size: 0.068306014
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1929,14 +1929,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.7490196, g: 0.6784314, b: 0.58431375, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 0}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2170,8 +2170,8 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 20, y: -17}
-  m_Pivot: {x: 1, y: 1}
+  m_SizeDelta: {x: 20, y: 0}
+  m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &198337941
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2212,7 +2212,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1826443626}
   m_Direction: 2
   m_Value: 0
-  m_Size: 0.9999999
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2232,14 +2232,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.7490196, g: 0.6784314, b: 0.58431375, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 0}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4955,8 +4955,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.000018079514, y: -0.000029107898}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 8, y: -0.000029107898}
+  m_SizeDelta: {x: -16, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &559279956
 MonoBehaviour:
@@ -5005,7 +5005,58 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Pellentesque pulvinar pellentesque
+    habitant morbi tristique senectus et netus et. Quam id leo in vitae turpis massa
+    sed elementum. Aliquam vestibulum morbi blandit cursus risus at ultrices mi. Nisl
+    pretium fusce id velit ut. In cursus turpis massa tincidunt dui ut. Tellus in
+    hac habitasse platea dictumst vestibulum. Eros in cursus turpis massa. Ac tincidunt
+    vitae semper quis lectus nulla at volutpat. Gravida rutrum quisque non tellus
+    orci ac auctor augue. Sit amet luctus venenatis lectus magna fringilla.\r\n\r\nAmet
+    risus nullam eget felis eget nunc lobortis. Aenean euismod elementum nisi quis
+    eleifend quam. Mattis vulputate enim nulla aliquet porttitor lacus. Amet nulla
+    facilisi morbi tempus iaculis. Feugiat nibh sed pulvinar proin gravida hendrerit
+    lectus a. Aliquam purus sit amet luctus venenatis. Diam quam nulla porttitor massa
+    id neque aliquam vestibulum morbi. Arcu dui vivamus arcu felis. Quam elementum
+    pulvinar etiam non quam. Congue eu consequat ac felis donec et odio pellentesque.
+    Est ante in nibh mauris cursus. Velit laoreet id donec ultrices tincidunt arcu.\r\n\r\nNullam
+    ac tortor vitae purus faucibus ornare suspendisse sed. Viverra maecenas accumsan
+    lacus vel facilisis volutpat. In egestas erat imperdiet sed euismod nisi porta
+    lorem mollis. Felis donec et odio pellentesque diam volutpat. Auctor neque vitae
+    tempus quam pellentesque nec nam. Aliquam nulla facilisi cras fermentum odio eu
+    feugiat pretium nibh. Commodo odio aenean sed adipiscing diam donec adipiscing
+    tristique. Sit amet purus gravida quis blandit turpis cursus in hac. Mauris rhoncus
+    aenean vel elit scelerisque mauris. Adipiscing elit duis tristique sollicitudin
+    nibh sit amet commodo nulla. Congue mauris rhoncus aenean vel elit. Aenean euismod
+    elementum nisi quis eleifend quam adipiscing vitae proin. Cursus eget nunc scelerisque
+    viverra mauris in aliquam sem. Maecenas sed enim ut sem viverra aliquet eget.
+    Mi bibendum neque egestas congue quisque egestas diam. Dolor sit amet consectetur
+    adipiscing elit pellentesque. Pulvinar mattis nunc sed blandit libero volutpat
+    sed. Convallis a cras semper auctor neque vitae tempus quam. Et malesuada fames
+    ac turpis egestas integer eget.\r\n\r\nMauris commodo quis imperdiet massa. Massa
+    vitae tortor condimentum lacinia quis vel eros donec. Purus viverra accumsan in
+    nisl nisi scelerisque eu ultrices vitae. Cras ornare arcu dui vivamus. Diam in
+    arcu cursus euismod quis viverra nibh cras. Blandit aliquam etiam erat velit scelerisque
+    in dictum. Ut enim blandit volutpat maecenas. Pellentesque massa placerat duis
+    ultricies lacus sed turpis tincidunt id. Dolor purus non enim praesent elementum
+    facilisis leo. Sit amet purus gravida quis blandit turpis cursus in hac. Lorem
+    dolor sed viverra ipsum nunc aliquet. Praesent tristique magna sit amet. Tortor
+    condimentum lacinia quis vel eros donec. Mauris vitae ultricies leo integer malesuada
+    nunc vel risus. Odio tempor orci dapibus ultrices in iaculis nunc sed. Risus nullam
+    eget felis eget nunc. Eget dolor morbi non arcu risus. Pulvinar sapien et ligula
+    ullamcorper malesuada proin. Sagittis eu volutpat odio facilisis mauris sit amet.\r\n\r\nSit
+    amet aliquam id diam maecenas ultricies. Facilisi nullam vehicula ipsum a arcu
+    cursus vitae congue mauris. Eleifend quam adipiscing vitae proin sagittis nisl
+    rhoncus. Sed augue lacus viverra vitae congue eu consequat. Facilisis sed odio
+    morbi quis commodo odio. Fringilla est ullamcorper eget nulla facilisi etiam dignissim.
+    Fames ac turpis egestas sed tempus urna et pharetra pharetra. Mattis enim ut tellus
+    elementum sagittis vitae et leo duis. Pretium viverra suspendisse potenti nullam
+    ac. Fermentum odio eu feugiat pretium nibh. Est ultricies integer quis auctor
+    elit sed vulputate. Mauris ultrices eros in cursus turpis massa. Amet tellus cras
+    adipiscing enim eu turpis egestas. Amet commodo nulla facilisi nullam vehicula
+    ipsum a arcu cursus. Urna molestie at elementum eu facilisis. Turpis massa sed
+    elementum tempus egestas sed sed risus. Id velit ut tortor pretium viverra suspendisse
+    potenti nullam ac."
 --- !u!222 &559279958
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9266,9 +9317,9 @@ MonoBehaviour:
     m_Top: 0
     m_Bottom: 0
   m_ChildAlignment: 4
-  m_Spacing: -200
-  m_ChildForceExpandWidth: 1
-  m_ChildForceExpandHeight: 1
+  m_Spacing: 0
+  m_ChildForceExpandWidth: 0
+  m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 0
   m_ChildControlHeight: 0
 --- !u!43 &1228570729
@@ -10994,7 +11045,7 @@ GameObject:
   - component: {fileID: 1349664162}
   - component: {fileID: 1349664161}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Selected Item Label
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11033,7 +11084,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.90588236, b: 0.78039217, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -11319,7 +11370,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 0}
+  m_TargetGraphic: {fileID: 1449459521}
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
@@ -14344,14 +14395,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.9058824, b: 0.7803922, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 0}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -14400,10 +14451,10 @@ RectTransform:
   m_Father: {fileID: 1349664160}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1719443634
 MonoBehaviour:
@@ -14418,7 +14469,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0.6431373, g: 0.33333334, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -14426,12 +14477,12 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_Font: {fileID: 12800000, guid: de9dc06c502ec304b807db1e1556f6b5, type: 3}
+    m_FontSize: 48
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
+    m_MinSize: 2
+    m_MaxSize: 48
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -14942,14 +14993,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.9058824, b: 0.7803922, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 0}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -19299,7 +19350,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 0}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
