@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class InventoryMenu : MonoBehaviour
 {
+    private CanvasGroup canvasGroup;
     private static InventoryMenu instance;
+
+    private bool IsVisible => canvasGroup.alpha > 0;
     public static InventoryMenu Instance
     {
         get
@@ -16,6 +19,31 @@ public class InventoryMenu : MonoBehaviour
         }
         private set { instance = value; }
     }
+    private void ShowMenu()
+    {
+        canvasGroup.alpha = 1;
+        canvasGroup.interactable = false;
+    }
+    private void HideMenu()
+    {
+        canvasGroup.alpha = 0;
+        canvasGroup.interactable = true;
+    }
+    private void Update()
+    {
+        HandleInput();
+    }
+
+    private void HandleInput()
+    {
+        if (Input.GetButtonDown("Show Inventory Menu"))
+        {
+            if (IsVisible)
+                HideMenu();
+            else
+                ShowMenu();
+        }
+    }
 
     private void Awake()
     {
@@ -23,5 +51,7 @@ public class InventoryMenu : MonoBehaviour
             instance = this;
         else
             throw new System.Exception("There is already an instance of InventoryMenu and there can only be one.");
+        canvasGroup = GetComponent<CanvasGroup>();
+        HideMenu();
     }
 }
