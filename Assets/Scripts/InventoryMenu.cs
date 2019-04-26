@@ -8,6 +8,7 @@ public class InventoryMenu : MonoBehaviour
     private CanvasGroup canvasGroup;
     private static InventoryMenu instance;
     private RigidbodyFirstPersonController rigidbodyFirstPersonController;
+    private AudioSource audioSource;
 
     private bool IsVisible => canvasGroup.alpha > 0;
     public static InventoryMenu Instance
@@ -33,6 +34,7 @@ public class InventoryMenu : MonoBehaviour
         rigidbodyFirstPersonController.enabled = false;
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
+        audioSource.Play();
     }
     private void HideMenu()
     {
@@ -41,10 +43,14 @@ public class InventoryMenu : MonoBehaviour
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
         rigidbodyFirstPersonController.enabled = true;
+        audioSource.Play();
     }
     private void Start()
     {
+        audioSource.volume = 0;
         HideMenu();
+        StartCoroutine(WaitForAudioClip());
+        Debug.Log("We're not done waiting.");
     }
     private void Update()
     {
@@ -70,5 +76,15 @@ public class InventoryMenu : MonoBehaviour
             throw new System.Exception("There is already an instance of InventoryMenu and there can only be one.");
         canvasGroup = GetComponent<CanvasGroup>();
         rigidbodyFirstPersonController = FindObjectOfType<RigidbodyFirstPersonController>();
+        audioSource = GetComponent<AudioSource>();
+    }
+    private IEnumerator WaitForAudioClip()
+    {
+        float originalVolume = audioSource.volume;
+        audioSource.volume = 0;
+        Debug.Log("Start Waiting");
+        yield return new WaitForSeconds(audioSource.clip.length);
+        Debug.Log("Done Waiting");
+        audioSource.volume = originalVolume;
     }
 }
