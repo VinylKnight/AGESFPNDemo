@@ -24,6 +24,8 @@ public class InventoryObject : InteractiveObject
     [SerializeField]
     private Sprite icon;
 
+    public string Description => description;
+    public Sprite Icon => icon;
     public string ObjectName => objectName;
 
     private new Renderer renderer;
