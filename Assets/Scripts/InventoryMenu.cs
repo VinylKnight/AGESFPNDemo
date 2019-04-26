@@ -21,10 +21,15 @@ public class InventoryMenu : MonoBehaviour
         }
         private set { instance = value; }
     }
+
+    public void ExitMenuButtonClicked()
+    {
+        HideMenu();
+    }
     private void ShowMenu()
     {
         canvasGroup.alpha = 1;
-        canvasGroup.interactable = false;
+        canvasGroup.interactable = true;
         rigidbodyFirstPersonController.enabled = false;
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
@@ -32,7 +37,7 @@ public class InventoryMenu : MonoBehaviour
     private void HideMenu()
     {
         canvasGroup.alpha = 0;
-        canvasGroup.interactable = true;
+        canvasGroup.interactable = false;
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
         rigidbodyFirstPersonController.enabled = true;
