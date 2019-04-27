@@ -8,9 +8,18 @@ public class InventoryMenu : MonoBehaviour
 {
     [SerializeField]
     private GameObject inventoryMenuTogglePrefab;
+
     [Tooltip("The content of the scrollview fro the list of inventory items.")]
     [SerializeField]
     private Transform inventoryListContentArea;
+
+    [Tooltip("Place in the UI for displaying info about the selected inventory item.")]
+    [SerializeField]
+    private Text descriptionAreaText;
+
+    [Tooltip("Place in the UI for displaying the name of the selected inventory item.")]
+    [SerializeField]
+    private Text itemLabelText;
 
     private CanvasGroup canvasGroup;
     private static InventoryMenu instance;
@@ -62,6 +71,23 @@ public class InventoryMenu : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         rigidbodyFirstPersonController.enabled = true;
         audioSource.Play();
+    }
+    /// <summary>
+    /// This is the event handler for InventoryMenuItemSelected.
+    /// </summary>
+    private void OnInventoryMenuItemSelected(InventoryObject inventoryObjectThatWasSelected)
+    {
+        itemLabelText.text = inventoryObjectThatWasSelected.ObjectName;
+        descriptionAreaText.text = inventoryObjectThatWasSelected.Description;
+
+    }
+    private void OnEnable()
+    {
+        InventoryMenuItemToggle.InventoryMenuItemSelected += OnInventoryMenuItemSelected;
+    }
+    private void OnDisable()
+    {
+        InventoryMenuItemToggle.InventoryMenuItemSelected -= OnInventoryMenuItemSelected;
     }
     private void Start()
     {
