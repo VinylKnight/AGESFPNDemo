@@ -172,7 +172,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83e922f48b1d91c40b2af4e09cc95b0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  iconImage: {fileID: 0}
+  iconImage: {fileID: 4798877632425568335}
 --- !u!1 &5695298510301954720
 GameObject:
   m_ObjectHideFlags: 0
@@ -305,7 +305,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:

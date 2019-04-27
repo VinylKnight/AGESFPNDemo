@@ -44,6 +44,7 @@ public class InventoryObject : InteractiveObject
     {
         base.InteractWith();
         PlayerInventory.InventoryObjects.Add(this);
+        InventoryMenu.Instance.AddItemToMenu(this);
         collider.enabled = false;
         renderer.enabled = false;
         Debug.Log($"Inventory menu game object name {InventoryMenu.Instance.name}");

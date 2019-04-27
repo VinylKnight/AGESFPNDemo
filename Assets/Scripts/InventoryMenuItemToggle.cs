@@ -7,13 +7,24 @@ public class InventoryMenuItemToggle : MonoBehaviour
 {
     private InventoryObject associatedInventoryObject;
 
+    public InventoryObject AssociatedInventoryObject
+    {
+        get { return associatedInventoryObject; }
+        set
+        {
+            associatedInventoryObject = value;
+            iconImage.sprite = associatedInventoryObject.Icon;
+        }
+    }
+
+    private void Awake()
+    {
+        Toggle toggle = GetComponent<Toggle>();
+        ToggleGroup toggleGroup = GetComponentInParent<ToggleGroup>();
+        toggle.group = toggleGroup;
+    }
+
     [Tooltip("The image component used to show the associaed object's icon.")]
     [SerializeField]
     private Image iconImage;
-
-    private void Start()
-    {
-        iconImage.sprite = associatedInventoryObject.Icon;
-
-    }
 }
