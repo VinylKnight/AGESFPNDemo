@@ -8,7 +8,7 @@ public class InventoryMenuItemToggle : MonoBehaviour
 {
     private InventoryObject associatedInventoryObject;
 
-    [Tooltip("The image component used to show the associaed object's icon.")]
+    [Tooltip("The image component used to show the associated object's icon.")]
     [SerializeField]
     private Image iconImage;
 
