@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class EndGameTrigger : TitleMenu
+public class EndGameTrigger : MonoBehaviour
 {
     [SerializeField]
     private Collider endGameTriggerCollider;
@@ -13,7 +13,7 @@ public class EndGameTrigger : TitleMenu
         if (other.gameObject.CompareTag("Player"))
         {
             SceneManager.LoadScene("UITestingScene");
-            ShowCredits();
+            
         }
     }
 }

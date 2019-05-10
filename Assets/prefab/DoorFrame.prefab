@@ -60,7 +60,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: d6be74916fadda94fa90b0129918de6b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -983,7 +983,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: 9daeac4f40c2c5e42a8ee32b02ba832e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1386,6 +1386,6 @@ MonoBehaviour:
   displayText: Door
   key: {fileID: 0}
   consumesKey: 0
-  lockedDisplayText: Locked
+  lockedDisplayText: I can't leave without the research data
   isLockedAudioClip: {fileID: 8300000, guid: 044a729fc5968ac4697f9696756d30ac, type: 3}
   openClip: {fileID: 8300000, guid: d984da8ba092a0b4e951b291c2ce36a0, type: 3}
