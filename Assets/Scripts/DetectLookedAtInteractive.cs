@@ -22,7 +22,6 @@ public class DetectLookedAtInteractive : MonoBehaviour
 
     public static event Action<IInteractive> LookedAtInteractiveChanged;
    
-
     private IInteractive lookedAtInteractive;
 
     public IInteractive LookedAtInteractive
@@ -36,9 +35,7 @@ public class DetectLookedAtInteractive : MonoBehaviour
                 lookedAtInteractive = value;
                 LookedAtInteractiveChanged?.Invoke(LookedAtInteractive);
             }
-            
         }
-
     }
     // Update is called once per frame
     void FixedUpdate()
@@ -51,16 +48,13 @@ public class DetectLookedAtInteractive : MonoBehaviour
         RaycastHit hitInfo;
         Debug.DrawRay(raycastOrigin.position, raycastOrigin.forward * maxRange, Color.red);
         bool objectWasDetected = Physics.Raycast(raycastOrigin.position, raycastOrigin.forward, out hitInfo, maxRange);
-
         IInteractive interactive = null;
         LookedAtInteractive = interactive;
-
         if (objectWasDetected == true)
         {
             Debug.Log("Player is looking at: " + hitInfo.collider.gameObject.name);
             interactive = hitInfo.collider.gameObject.GetComponent<IInteractive>();
         }
-        
         return interactive;
     }
 }

@@ -12,6 +12,6 @@ EditorBuildSettings:
     path: Assets/Scenes/UITestingScene.unity
     guid: 2dcfbb4f4330f1b4682efd98d1a014dd
   - enabled: 1
-    path: Assets/Scenes/SampleScene2.unity
-    guid: a9981528c3838e34b98591f7c690742b
+    path: Assets/Scenes/InventoryMenuTestScene.unity
+    guid: b08c1d9f43441b64c92e1595b123d24e
   m_configObjects: {}

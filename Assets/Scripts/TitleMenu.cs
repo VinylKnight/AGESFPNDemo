@@ -6,11 +6,11 @@ using UnityEngine.SceneManagement;
 public class TitleMenu : MonoBehaviour
 {
     [SerializeField]
-    private string gameSceneName;
+    protected string gameSceneName;
     [SerializeField]
-    private GameObject creditsMenuPanel;
+    protected GameObject creditsMenuPanel;
     [SerializeField]
-    private GameObject titleMenuPanel;
+    protected GameObject titleMenuPanel;
 
     public void LoadGameScene()
     {
